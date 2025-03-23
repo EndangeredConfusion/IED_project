@@ -1,0 +1,28 @@
+esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj: \
+ /Users/kaeshev/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c \
+ /Users/kaeshev/esp/esp-idf/components/xtensa/include/eri.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+ /Users/kaeshev/esp/esp-idf/components/xtensa/include/xtensa-debug-module.h \
+ /Users/kaeshev/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
+ /Users/kaeshev/esp/esp-idf/components/log/include/esp_log.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
+ /Users/kaeshev/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
+ /Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/config/sdkconfig.h \
+ /Users/kaeshev/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /Users/kaeshev/esp/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /Users/kaeshev/esp/esp-idf/components/log/include/esp_log_level.h \
+ /Users/kaeshev/esp/esp-idf/components/log/include/esp_log_color.h \
+ /Users/kaeshev/esp/esp-idf/components/log/include/esp_log_buffer.h \
+ /Users/kaeshev/esp/esp-idf/components/log/include/esp_log_timestamp.h

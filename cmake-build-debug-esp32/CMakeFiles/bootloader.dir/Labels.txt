@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/CMakeFiles/bootloader
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/CMakeFiles/bootloader.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/CMakeFiles/bootloader-complete.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/kaeshev/esp/IED_project/cmake-build-debug-esp32/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,554 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 15:03:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ae78 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae9c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d240 vaddr=40080000 size=02dd8h ( 11736) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15a70h ( 88688) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035a98 vaddr=40082dd8 size=0b348h ( 45896) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     IED_project[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Mar 22 2025 18:29:42[0m
+[0;32mI (211) app_init: ELF file SHA256:  597c13a7d...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (222) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (226) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+Scanning I2C bus...
+I2C scan complete.
+[1;31mE (312) I2C: Failed to wake up MPU-6050[0m
+[1;31mE (1312) I2C: Failed to wake up MPU-6050, error: -1[0m
+[2J[HX: 29730, Y: 16447, Z: 24639E (2312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (3312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (4312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (5312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (6312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (7312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (8312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (9312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (10312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (11312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (12312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (13312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (14312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (15312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (16312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (17312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (18312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (19312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (20312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (21312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (22312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (23312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (24312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (25312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (26312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (27312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (28312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (29312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (30312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (31312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (32312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (33312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (34312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (35312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (36312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (37312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (38312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (39312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (40312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (41312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (42312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (43312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (44312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (45312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (46312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (47312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (48312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (49312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (50312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (51312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (52312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (53312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (54312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (55312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (56312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (57312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (58312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (59312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (60312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (61312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (62312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (63312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (64312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (65312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (66312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (67312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (68312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (69312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (70312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (71312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (72312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (73312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (74312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (75312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (76312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (77312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (78312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (79312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (80312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (81312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (82312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (83312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (84312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (85312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (86312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (87312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (88312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (89312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (90312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (91312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (92312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (93312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (94312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (95312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (96312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (97312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (98312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (99312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (100312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (101312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (102312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (103312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (104312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (105312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (106312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (107312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (108312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (109312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (110312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (111312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (112312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (113312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (114312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (115312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (116312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (117312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (118312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (119312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (120312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (121312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (122312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (123312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (124312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (125312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (126312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (127312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (128312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (129312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (130312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (131312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (132312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (133312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (134312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (135312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (136312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (137312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (138312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (139312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (140312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (141312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (142312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (143312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (144312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (145312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (146312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (147312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (148312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (149312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (150312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (151312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (152312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (153312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (154312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (155312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (156312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (157312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (158312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (159312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (160312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (161312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (162312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (163312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (164312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (165312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (166312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (167312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (168312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (169312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (170312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (171312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (172312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (173312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (174312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (175312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (176312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (177312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (178312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (179312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (180312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (181312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (182312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (183312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (184312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (185312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (186312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (187312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (188312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (189312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (190312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (191312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (192312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (193312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (194312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (195312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (196312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (197312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (198312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (199312) I2C: Failed to wake up MPU-6050, error: -1
+�  ��  ��� ��   �������������������������������� ����  ����  ���������������� � � ����� ����.�        	2 �     �  - 
+  ( ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 15:03:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ae78 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae9c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d240 vaddr=40080000 size=02dd8h ( 11736) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15a70h ( 88688) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035a98 vaddr=40082dd8 size=0b348h ( 45896) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     IED_project[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Mar 22 2025 18:29:42[0m
+[0;32mI (211) app_init: ELF file SHA256:  597c13a7d...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (222) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (226) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+Scanning I2C bus...
+I2C scan complete.
+[1;31mE (312) I2C: Failed to wake up MPU-6050[0m
+[1;31mE (1312) I2C: Failed to wake up MPU-6050, error: -1[0m
+[2J[HX: 29730, Y: 16447, Z: 24639E (2312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (3312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (4312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (5312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (6312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (7312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (8312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (9312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (10312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (11312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (12312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (13312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (14312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (15312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (16312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (17312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (18312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (19312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (20312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (21312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (22312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (23312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (24312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (25312) I2C: Failed to wake up MPU-6050, error: 263
+[2J[HX: 29730, Y: 16447, Z: 24639E (26312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (27312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (28312) I2C: Failed to wake up MPU-6050, error: 263
+[2J[HX: 29730, Y: 16447, Z: 24639E (29312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (30312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (31312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (32312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (33312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (34312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (35312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (36312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (37312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (38312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639E (39312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 29730, Y: 16447, Z: 24639[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0E (43312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (44312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (45312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (46312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (47312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (48312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (49312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (50312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (51312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (52312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (53312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (54312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (55312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (56312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (57312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (58312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (59312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (60312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (61312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (62312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (63312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (64312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (65312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (66312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (67312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (68312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (69312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (70312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (71312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (72312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (73312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (74312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (75312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0E (77312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (78312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (79312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (80312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (81312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (82312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (83312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (84312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (85312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (86312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (87312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (88312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (89312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (90312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (91312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (92312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (93312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (94312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (95312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (96312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (97312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (98312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (99312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (100312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (101312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (102312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (103312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (104312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (105312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (106312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (107312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0E (108312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, Y: 0, Z: 0[2J[HX: 0, ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 15:03:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ae78 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae9c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d240 vaddr=40080000 size=02dd8h ( 11736) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15a70h ( 88688) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035a98 vaddr=40082dd8 size=0b348h ( 45896) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     IED_project[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Mar 22 2025 18:29:42[0m
+[0;32mI (211) app_init: ELF file SHA256:  597c13a7d...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (222) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (226) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+Scanning I2C bus...
+Found device at 0x68
+I2C scan complete.
+[0;32mI (312) I2C: MPU-6050 is awake[0m
+[2J[HX: 65226, Y: 65369, Z: 65335[2J[HX: 65208, Y: 65345, Z: 65335[2J[HX: 65237, Y: 65351, Z: 65350[2J[HX: 65228, Y: 65347, Z: 65324[2J[HX: 65195, Y: 65370, Z: 65435[2J[HX: 888, Y: 65342, Z: 59699[2J[HX: 65007, Y: 65393, Z: 861[2J[HX: 65227, Y: 65376, Z: 65406[2J[HX: 65207, Y: 65359, Z: 65360[2J[HX: 65196, Y: 65365, Z: 65395[2J[HX: 65202, Y: 65363, Z: 65393[2J[HX: 64664, Y: 65325, Z: 2484[2J[HX: 44, Y: 65398, Z: 63576[2J[HX: 65482, Y: 65431, Z: 64883[2J[HX: 65349, Y: 63819, Z: 991[2J[HX: 61131, Y: 62906, Z: 2090[2J[HX: 653, Y: 65423, Z: 65030[2J[HX: 5841, Y: 2070, Z: 62746[2J[HX: 1224, Y: 11, Z: 64941[2J[HX: 58568, Y: 1392, Z: 1284[2J[HX: 62197, Y: 60769, Z: 9210[2J[HX: 22419, Y: 8036, Z: 60470[2J[HX: 10117, Y: 3413, Z: 62883[2J[HX: 2030, Y: 4581, Z: 64696[2J[HX: 8098, Y: 5886, Z: 62615[2J[HX: 65160, Y: 64546, Z: 62648[2J[HX: 65113, Y: 271, Z: 65528[2J[HX: 64302, Y: 67, Z: 1870[2J[HX: 63969, Y: 65196, Z: 1425[2J[HX: 64270, Y: 65333, Z: 3252[2J[HX: 65326, Y: 915, Z: 2193[2J[HX: 64799, Y: 65359, Z: 782[2J[HX: 3218, Y: 1780, Z: 54815[2J[HX: 65501, Y: 182, Z: 65050[2J[HX: 65233, Y: 64362, Z: 358[2J[HX: 55, Y: 64526, Z: 2956[2J[HX: 1509, Y: 63575, Z: 65042[2J[HX: 501, Y: 65336, Z: 61451[2J[HX: 63932, Y: 65363, Z: 6047[2J[HX: 64197, Y: 65403, Z: 4878[2J[HX: 64092, Y: 65409, Z: 5381[2J[HX: 1866, Y: 65313, Z: 54560[2J[HX: 64927, Y: 58, Z: 889[2J[HX: 64144, Y: 65334, Z: 5147[2J[HX: 494, Y: 65364, Z: 61422[2J[HX: 64785, Y: 65405, Z: 1892E (47312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 64785, Y: 65405, Z: 1892[2J[HX: 65239, Y: 64508, Z: 65425[2J[HX: 65220, Y: 65394, Z: 65332E (50312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 65220, Y: 65394, Z: 65332E (51312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 65220, Y: 65394, Z: 65332E (52312) I2C: Failed to wake up MPU-6050, error: -1
+[2J[HX: 65220, Y: 65394, Z: 65332E (53312) I2C: Failed to wake up MPU-6050, error: -1
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 15:03:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae50h ( 44624) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ae78 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae9c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d240 vaddr=40080000 size=02dd8h ( 11736) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15a70h ( 88688) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035a98 vaddr=40082dd8 size=0b348h ( 45896) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     IED_project[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (206) app_init: Compile time:     Mar 22 2025 18:29:42[0m
+[0;32mI (211) app_init: ELF file SHA256:  597c13a7d...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (222) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (226) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+Scanning I2C bus...
+I2C scan complete.
+[1;31mE (312) I2C: Failed to wake up MPU-6050[0m

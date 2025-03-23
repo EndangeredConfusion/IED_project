@@ -1,0 +1,355 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 15:03:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adb8h ( 44472) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001ade0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001ae04 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001d1a8 vaddr=40080000 size=02e70h ( 11888) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=158f8h ( 88312) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=00035920 vaddr=40082e70 size=0b2b0h ( 45744) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     IED_project[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (205) app_init: Compile time:     Mar 22 2025 18:29:42[0m
+[0;32mI (210) app_init: ELF file SHA256:  94e473364...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (218) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (222) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (226) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (230) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (236) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (241) heap_init: At 3FFB2C68 len 0002D398 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (252) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E120 len 00011EE0 (71 KiB): IRAM[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[1;31mE (1302) I2C: Gyroscope read failed[0m
+[2J[HX: 29730, Y: 16447, Z: 24639E (2302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (3302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (4302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (5302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (6302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (7302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (8302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (9302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (10302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (11302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (12302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (13302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (14302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (15302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (16302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (17302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (18302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (19302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (20302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (21302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (22302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (23302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (24302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (25302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (26302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (27302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (28302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (29302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (30302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (31302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (32302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (33302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (34302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (35302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (36302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (37302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (38302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (39302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (40302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (41302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (42302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (43302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (44302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (45302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (46302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (47302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (48302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (49302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (50302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (51302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (52302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (53302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (54302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (55302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (56302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (57302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (58302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (59302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (60302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (61302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (62302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (63302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (64302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (65302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (66302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (67302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (68302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (69302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (70302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (71302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (72302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (73302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (74302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (75302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (76302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (77302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (78302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (79302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (80302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (81302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (82302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (83302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (84302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (85302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (86302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (87302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (88302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (89302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (90302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (91302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (92302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (93302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (94302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (95302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (96302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (97302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (98302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (99302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (100302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (101302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (102302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (103302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (104302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (105302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (106302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (107302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (108302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (109302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (110302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (111302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (112302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (113302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (114302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (115302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (116302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (117302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (118302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (119302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (120302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (121302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (122302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (123302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (124302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (125302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (126302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (127302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (128302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (129302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (130302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (131302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (132302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (133302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (134302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (135302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (136302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (137302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (138302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (139302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (140302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (141302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (142302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (143302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (144302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (145302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (146302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (147302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (148302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (149302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (150302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (151302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (152302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (153302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (154302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (155302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (156302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (157302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (158302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (159302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (160302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (161302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (162302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (163302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (164302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (165302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (166302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (167302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (168302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (169302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (170302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (171302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (172302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (173302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (174302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (175302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (176302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (177302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (178302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (179302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (180302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (181302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (182302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (183302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (184302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (185302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (186302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (187302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (188302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (189302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (190302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (191302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (192302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (193302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (194302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (195302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (196302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (197302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (198302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (199302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (200302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (201302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (202302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (203302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (204302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (205302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (206302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (207302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (208302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (209302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (210302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (211302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (212302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (213302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (214302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (215302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (216302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (217302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (218302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (219302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (220302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (221302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (222302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (223302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (224302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (225302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (226302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (227302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (228302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (229302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (230302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (231302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (232302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (233302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (234302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (235302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (236302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (237302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (238302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (239302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (240302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (241302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (242302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (243302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (244302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (245302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (246302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (247302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (248302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (249302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (250302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (251302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (252302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (253302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (254302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (255302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (256302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (257302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (258302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (259302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (260302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (261302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (262302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (263302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (264302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (265302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (266302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (267302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (268302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (269302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (270302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (271302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (272302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (273302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (274302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (275302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (276302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (277302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (278302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (279302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (280302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (281302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (282302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (283302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (284302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (285302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (286302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (287302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (288302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (289302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (290302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (291302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (292302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (293302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (294302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (295302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (296302) I2C: Gyroscope read failed
+[2J[HX: 29730, Y: 16447, Z: 24639E (297302) I2C: Gyroscope read failed
